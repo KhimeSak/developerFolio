@@ -1,169 +1,95 @@
-
-const splashScreen = {
-  enabled: true,
-  animation: null,
-  duration: 2000
-};
-
-const greeting = {
-  username: "Sakina Khimeche",
-  title: "Bonjour, je suis Sakina",
-  subTitle:
-    "Future diplômée en Master Data, avec une expérience concrète en alternance. Je combine les compétences d’une Data Analyst, Data Engineer et Data Scientist pour exploiter, transformer et valoriser les données.",
-  resumeLink: "",
-  displayGreeting: true
-};
-
-const socialMediaLinks = {
-  github: "",
-  linkedin: "https://www.linkedin.com/in/sakina-khimeche/",
-  gmail: "khimechesakina@gmail.com",
-  display: true
-};
-
-const skillsSection = {
-  title: "Compétences",
-  subTitle: "Analyse, ingénierie et science des données réunies dans une approche complète.",
-  skills: [
-    "🔍 Analyse : tableaux de bord, storytelling, analyse statistique avancée",
-    "🧪 Science : machine learning, NLP, deep learning avec Python",
-    "⚙️ Ingénierie : pipelines ETL avec Spark, Airflow, Snowflake"
-  ],
-  tools: [
-    { skillName: "Power BI" },
-    { skillName: "Python" },
-    { skillName: "Pandas" },
-    { skillName: "Scikit-learn" },
-    { skillName: "TensorFlow" },
-    { skillName: "SQL" },
-    { skillName: "Streamlit" },
-    { skillName: "Airflow" },
-    { skillName: "Snowflake" },
-    { skillName: "MongoDB" },
-    { skillName: "Jupyter Notebook" },
-    { skillName: "Anova" },
-    { skillName: "Statistiques inférentielles" }
-  ],
-  display: true
-};
-
-const educationInfo = {
-  display: true,
-  schools: [
-    {
-      schoolName: "IA School",
-      subHeader: "Mastère Chef de projet en Intelligence Artificielle – Data Science",
-      duration: "2023 - 2025"
+# Création d'un objet complet pour le fichier portfolio.js sans erreurs
+portfolio = {
+    "greeting": {
+        "username": "Sakina Khimeche",
+        "title": "Bonjour, je suis Sakina",
+        "subTitle": "Une passionnée de Data. Je travaille dans les domaines de la Data Science, l'ingénierie des données, et l'analyse avancée.",
+        "resumeLink": "https://example.com/mon-cv.pdf",
+        "display": True
     },
-    {
-      schoolName: "Université de Rouen",
-      subHeader: "Licence 3 Informatique",
-      duration: "2021 - 2023"
+    "skillsSection": {
+        "title": "Ce que je fais",
+        "subTitle": "DATA ENGINEERING | DATA ANALYSIS | DATA SCIENCE",
+        "skills": [
+            "⚡ Transformation de données massives via Python et PySpark",
+            "⚡ Création de dashboards interactifs avec Power BI & Tableau",
+            "⚡ Machine Learning pour la prédiction et la classification",
+        ],
+        "softwareSkills": [
+            {"skillName": "Python", "fontAwesomeClassname": "logos:python"},
+            {"skillName": "Power BI", "fontAwesomeClassname": "logos:powerbi"},
+            {"skillName": "SQL", "fontAwesomeClassname": "logos:mysql"},
+            {"skillName": "Snowflake", "fontAwesomeClassname": "logos:snowflake"},
+        ],
+        "display": True
     },
-    {
-      schoolName: "Université de Béjaïa",
-      subHeader: "Maitrise en Génie Logiciel + Licence Système d'information",
-      duration: "2017 - 2021"
+    "educationInfo": {
+        "display": True,
+        "schools": [
+            {
+                "schoolName": "IA School Paris",
+                "logo": "iaschool.png",
+                "subHeader": "Master en Intelligence Artificielle et Data Science",
+                "duration": "2023 - 2025",
+                "desc": "Spécialisation en data engineering, cloud et machine learning.",
+                "descBullets": ["Projet de data masking", "Snowflake, Python, Spark"]
+            }
+        ]
+    },
+    "experience": {
+        "display": True,
+        "sections": [
+            {
+                "title": "Expérience professionnelle",
+                "experiences": [
+                    {
+                        "role": "Data Analyste / Alternance",
+                        "company": "Generali Assurance",
+                        "companylogo": "generali.png",
+                        "date": "Sept 2023 – Maintenant",
+                        "desc": "Création de dashboards et gestion des rôles d'accès avec Snowflake",
+                        "descBullets": [
+                            "Projet de data masking conforme RGPD",
+                            "Analyse de données clients pour décisions d'indemnisation"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "projects": {
+        "display": True,
+        "projects": [
+            {
+                "image": "masking.png",
+                "projectName": "Data Masking Platform",
+                "projectDesc": "Application de masquage de données sensibles avec Snowflake & Streamlit",
+                "footerLink": [{"name": "Lien GitHub", "url": "https://github.com/KhimeSak/data-masking"}]
+            },
+            {
+                "image": "pl300.png",
+                "projectName": "Certification PL-300",
+                "projectDesc": "Projet de préparation à la certification Power BI Analyst (PL-300)",
+                "footerLink": []
+            }
+        ]
+    },
+    "contactInfo": {
+        "display": True,
+        "email": "sakina.khimeche@example.com",
+        "phone": "+33 6 00 00 00 00",
+        "linkedin": "https://www.linkedin.com/in/khimesak/",
+        "github": "https://github.com/KhimeSak"
     }
-  ]
-};
+}
 
-const workExperiences = {
-  display: true,
-  experience: [
-    {
-      role: "Data Engineer & Analyst (Alternance)",
-      company: "Generali Vie",
-      date: "Sep 2024 – Présent",
-      desc: "Projet de Data Masking, suivi qualité, dashboards, gouvernance des accès.",
-      descBullets: [
-        "Masquage intelligent automatisé (Snowflake + Streamlit)",
-        "Dashboards Power BI sur la qualité et les habilitations",
-        "Export de métadonnées Zeenea vers Snowflake",
-        "Benchmark des formations internes Data & IA"
-      ]
-    },
-    {
-      role: "Stagiaire Data Analyst",
-      company: "Parapharmacie",
-      date: "Avril 2021 – Juin 2021",
-      desc: "Application de gestion de stock et alertes produits"
-    },
-    {
-      role: "Stagiaire Data",
-      company: "Sonatrach / TRC",
-      date: "Janv 2020 – Juin 2020",
-      desc: "Analyse et développement d’un système de traçabilité du carburant"
-    }
-  ]
-};
+import json
+from pathlib import Path
 
-const achievementSection = {
-  title: "Certifications",
-  subtitle: "Certifications obtenues et en préparation dans le domaine de la data",
-  achievementsCards: [
-    {
-      title: "PL-300: Power BI Data Analyst Associate",
-      subtitle: "Certification Microsoft Power BI",
-      footerLink: [
-        {
-          name: "Voir",
-          url: "https://learn.microsoft.com/fr-fr/certifications/power-bi-data-analyst-associate/"
-        }
-      ]
-    },
-    {
-      title: "SnowPro Core Certification",
-      subtitle: "Certification officielle Snowflake",
-      footerLink: [
-        {
-          name: "Voir",
-          url: "https://www.snowflake.com/en/certification/snowpro-core-certification/"
-        }
-      ]
-    },
-    {
-      title: "DP-203: Azure Data Engineer Associate",
-      subtitle: "Data Engineering sur Azure",
-      footerLink: [
-        {
-          name: "Voir",
-          url: "https://learn.microsoft.com/fr-fr/certifications/azure-data-engineer/"
-        }
-      ]
-    }
-  ],
-  display: true
-};
-
-const openSource = { showGithubProfile: false, display: false };
-const bigProjects = { title: "", subtitle: "", projects: [], display: false };
-const blogSection = { title: "", subtitle: "", blogs: [], display: false };
-const talkSection = { title: "", subtitle: "", talks: [], display: false };
-const podcastSection = { title: "", subtitle: "", podcast: [], display: false };
-const contactInfo = {
-  title: "Contact",
-  subtitle: "Disponible pour discuter d’opportunités professionnelles",
-  number: "",
-  email_address: "khimechesakina@gmail.com"
-};
-const twitterDetails = { userName: "", display: false };
-const isHireable = true;
-
-module.exports = {
-  splashScreen,
-  greeting,
-  socialMediaLinks,
-  skillsSection,
-  educationInfo,
-  workExperiences,
-  achievementSection,
-  openSource,
-  bigProjects,
-  blogSection,
-  talkSection,
-  podcastSection,
-  contactInfo,
-  twitterDetails,
-  isHireable
-};
+# Écriture du JSON formaté dans un fichier
+output_path = Path("/mnt/data/portfolio.js")
+with open(output_path, "w", encoding="utf-8") as f:
+    f.write("export const portfolioData = ")
+    json.dump(portfolio, f, indent=2, ensure_ascii=False)
+    f.write(";")
+output_path.name
