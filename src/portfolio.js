@@ -1,20 +1,17 @@
-// illustration
 import generaliLogo from "./assets/images/generali.png";
+
 export const illustration = {
   animated: true
 };
 
-// greeting
 export const greeting = {
   username: "Sakina Khimeche",
   title: "Bonjour, je suis Sakina",
   subTitle:
     "Future diplômée en Master Data, avec une expérience concrète en alternance. Je combine Data Analyst, Data Engineer et Data Scientist pour exploiter, transformer et valoriser les données.",
-  //resumeLink: "https://example.com/mon-cv.pdf",
   display: true
 };
 
-// social media
 export const socialMediaLinks = {
   github: "https://github.com/KhimeSak",
   linkedin: "https://www.linkedin.com/in/khimesak/",
@@ -22,7 +19,6 @@ export const socialMediaLinks = {
   display: true
 };
 
-// skills section
 export const skillsSection = {
   title: "Compétences",
   subTitle: "Analyse, ingénierie et science des données réunies dans une approche complète.",
@@ -34,7 +30,6 @@ export const skillsSection = {
   display: true
 };
 
-// tech stack
 export const techStack = {
   viewSkillBars: true,
   experience: [
@@ -45,24 +40,23 @@ export const techStack = {
   display: true
 };
 
-
-
-// work experience
 export const workExperiences = {
   display: true,
   experience: [
     {
       role: "Data Engineer & Analyst",
       company: "Generali",
-      companylogo: "generaliLogo",
+      companylogo: generaliLogo, // ✅ ici c’est une variable
       date: "2024 - Présent",
       desc: "Mise en place de pipelines de masquage, dashboards Power BI, export Snowflake",
-      descBullets: ["Data Masking avec Streamlit", "Export Zeenea vers Snowflake"]
+      descBullets: [
+        "Data Masking avec Streamlit",
+        "Export Zeenea vers Snowflake"
+      ]
     }
   ]
 };
 
-// contact
 export const contactInfo = {
   title: "Contact 📞",
   subtitle: "Disponible pour toute opportunité ou collaboration",
@@ -70,7 +64,6 @@ export const contactInfo = {
   email_address: "khimechesakina@gmail.com",
   display: true
 };
-"""
 
 export default {
   illustration,
@@ -78,9 +71,6 @@ export default {
   socialMediaLinks,
   skillsSection,
   techStack,
-  educationInfo,
   workExperiences,
-  achievementSection,
   contactInfo
 };
-
