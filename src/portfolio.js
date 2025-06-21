@@ -103,12 +103,15 @@ export const contactInfo = {
 };
 """
 
-from pathlib import Path
-portfolio_path = Path("/mnt/data/portfolio.js")
-with open(portfolio_path, "w", encoding="utf-8") as f:
-    f.write(portfolio_code)
+export default {
+  illustration,
+  greeting,
+  socialMediaLinks,
+  skillsSection,
+  techStack,
+  educationInfo,
+  workExperiences,
+  achievementSection,
+  contactInfo
+};
 
-portfolio_path.name
-
-
-export default portfolio;
