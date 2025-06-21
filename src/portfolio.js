@@ -1,11 +1,10 @@
-# Création d'un objet complet pour le fichier portfolio.js sans erreurs
-portfolio = {
+const portfolio = {
     "greeting": {
         "username": "Sakina Khimeche",
         "title": "Bonjour, je suis Sakina",
         "subTitle": "Une passionnée de Data. Je travaille dans les domaines de la Data Science, l'ingénierie des données, et l'analyse avancée.",
         "resumeLink": "https://example.com/mon-cv.pdf",
-        "display": True
+        "display": true
     },
     "skillsSection": {
         "title": "Ce que je fais",
@@ -21,10 +20,10 @@ portfolio = {
             {"skillName": "SQL", "fontAwesomeClassname": "logos:mysql"},
             {"skillName": "Snowflake", "fontAwesomeClassname": "logos:snowflake"},
         ],
-        "display": True
+        "display": true
     },
     "educationInfo": {
-        "display": True,
+        "display": true,
         "schools": [
             {
                 "schoolName": "IA School Paris",
@@ -37,7 +36,7 @@ portfolio = {
         ]
     },
     "experience": {
-        "display": True,
+        "display": true,
         "sections": [
             {
                 "title": "Expérience professionnelle",
@@ -58,7 +57,7 @@ portfolio = {
         ]
     },
     "projects": {
-        "display": True,
+        "display": true,
         "projects": [
             {
                 "image": "masking.png",
@@ -75,7 +74,7 @@ portfolio = {
         ]
     },
     "contactInfo": {
-        "display": True,
+        "display": true,
         "email": "sakina.khimeche@example.com",
         "phone": "+33 6 00 00 00 00",
         "linkedin": "https://www.linkedin.com/in/khimesak/",
@@ -90,6 +89,8 @@ from pathlib import Path
 output_path = Path("/mnt/data/portfolio.js")
 with open(output_path, "w", encoding="utf-8") as f:
     f.write("export const portfolioData = ")
-    json.dump(portfolio, f, indent=2, ensure_ascii=False)
+    json.dump(portfolio, f, indent=2, ensure_ascii=false)
     f.write(";")
 output_path.name
+
+export default portfolio;
