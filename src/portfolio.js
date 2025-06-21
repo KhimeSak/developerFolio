@@ -1,4 +1,5 @@
 // illustration
+import generaliLogo from "./assets/images/generali.png";
 export const illustration = {
   animated: true
 };
@@ -44,20 +45,7 @@ export const techStack = {
   display: true
 };
 
-// education
-export const educationInfo = {
-  display: true,
-  schools: [
-    {
-      schoolName: "IA School",
-      logo: require("./assets/images/iaschool.jpeg"),
-      subHeader: "Master Intelligence Artificielle - Data Science",
-      duration: "2023 - 2025",
-      desc: "Spécialisation en ingénierie de la donnée, machine learning et gouvernance",
-      descBullets: ["Snowflake, Streamlit, Spark", "Projet Data Masking"]
-    }
-  ]
-};
+
 
 // work experience
 export const workExperiences = {
@@ -66,7 +54,7 @@ export const workExperiences = {
     {
       role: "Data Engineer & Analyst",
       company: "Generali",
-      companylogo: require("./assets/images/generali.png"),
+      companylogo: "generaliLogo",
       date: "2024 - Présent",
       desc: "Mise en place de pipelines de masquage, dashboards Power BI, export Snowflake",
       descBullets: ["Data Masking avec Streamlit", "Export Zeenea vers Snowflake"]
