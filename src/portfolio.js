@@ -74,25 +74,6 @@ export const workExperiences = {
   ]
 };
 
-// certifications
-export const achievementSection = {
-  title: "Certifications",
-  subtitle: "Certifications obtenues et en préparation",
-  achievementsCards: [
-    {
-      title: "PL-300: Power BI Data Analyst Associate",
-      subtitle: "Certification Microsoft",
-      footerLink: [{ name: "Voir", url: "https://learn.microsoft.com/fr-fr/certifications/power-bi-data-analyst-associate/" }]
-    },
-    {
-      title: "SnowPro Core",
-      subtitle: "Certification Snowflake",
-      footerLink: [{ name: "Voir", url: "https://www.snowflake.com/en/certification/snowpro-core-certification/" }]
-    }
-  ],
-  display: true
-};
-
 // contact
 export const contactInfo = {
   title: "Contact 📞",
