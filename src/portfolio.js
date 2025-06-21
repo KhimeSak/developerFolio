@@ -50,7 +50,7 @@ export const educationInfo = {
   schools: [
     {
       schoolName: "IA School",
-      //logo: require("./assets/images/iaschool.png"),
+      logo: require("./assets/images/iaschool.jpeg"),
       subHeader: "Master Intelligence Artificielle - Data Science",
       duration: "2023 - 2025",
       desc: "Spécialisation en ingénierie de la donnée, machine learning et gouvernance",
@@ -66,7 +66,7 @@ export const workExperiences = {
     {
       role: "Data Engineer & Analyst",
       company: "Generali",
-      //companylogo: require("./assets/images/generali.png"),
+      companylogo: require("./assets/images/generali.png"),
       date: "2024 - Présent",
       desc: "Mise en place de pipelines de masquage, dashboards Power BI, export Snowflake",
       descBullets: ["Data Masking avec Streamlit", "Export Zeenea vers Snowflake"]
