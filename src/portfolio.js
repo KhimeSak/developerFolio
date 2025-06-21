@@ -1,21 +1,19 @@
 
-// Splash Screen
 const splashScreen = {
   enabled: true,
   animation: null,
   duration: 2000
 };
 
-// Greeting Section
 const greeting = {
   username: "Sakina Khimeche",
   title: "Bonjour, je suis Sakina",
-  subTitle: "Passionnée par la donnée sous toutes ses formes, je combine les compétences d'une Data Analyst, Data Engineer et Data Scientist. Mon objectif : transformer les données en décisions et automatiser les processus pour plus de performance et de valeur.",
+  subTitle:
+    "Future diplômée en Master Data, avec une expérience concrète en alternance. Je combine les compétences d’une Data Analyst, Data Engineer et Data Scientist pour exploiter, transformer et valoriser les données.",
   resumeLink: "",
   displayGreeting: true
 };
 
-// Social Media Links
 const socialMediaLinks = {
   github: "",
   linkedin: "https://www.linkedin.com/in/sakina-khimeche/",
@@ -23,17 +21,16 @@ const socialMediaLinks = {
   display: true
 };
 
-// Skills Section
 const skillsSection = {
   title: "Compétences",
-  subTitle: "De l'analyse descriptive à la modélisation prédictive, en passant par la mise en production de pipelines de données.",
+  subTitle: "Analyse, ingénierie et science des données réunies dans une approche complète.",
   skills: [
-    "🔍 Data Analyst : Analyse exploratoire, visualisation (Power BI), storytelling, reporting automatisé",
-    "🧪 Data Scientist : Préparation des données, apprentissage supervisé et non supervisé, deep learning avec Python",
-    "⚙️ Data Engineer : Conception de pipelines ETL avec PySpark et Airflow, gestion de la qualité et du stockage dans Snowflake"
+    "🔍 Analyse : tableaux de bord, storytelling, analyse statistique avancée",
+    "🧪 Science : machine learning, NLP, deep learning avec Python",
+    "⚙️ Ingénierie : pipelines ETL avec Spark, Airflow, Snowflake"
   ],
   tools: [
-    { skillName: "Power BI", fontAwesomeClassname: "fas fa-chart-bar" },
+    { skillName: "Power BI" },
     { skillName: "Python" },
     { skillName: "Pandas" },
     { skillName: "Scikit-learn" },
@@ -50,7 +47,6 @@ const skillsSection = {
   display: true
 };
 
-// Education Section
 const educationInfo = {
   display: true,
   schools: [
@@ -72,7 +68,6 @@ const educationInfo = {
   ]
 };
 
-// Work Experience
 const workExperiences = {
   display: true,
   experience: [
@@ -80,37 +75,36 @@ const workExperiences = {
       role: "Data Engineer & Analyst (Alternance)",
       company: "Generali Vie",
       date: "Sep 2024 – Présent",
-      desc: "Mise en œuvre d’un projet de Data Masking, visualisation avancée, qualité des données et gouvernance.",
+      desc: "Projet de Data Masking, suivi qualité, dashboards, gouvernance des accès.",
       descBullets: [
-        "Règles de masquage automatisées avec Streamlit et Snowflake",
-        "Création de dashboards Power BI",
+        "Masquage intelligent automatisé (Snowflake + Streamlit)",
+        "Dashboards Power BI sur la qualité et les habilitations",
         "Export de métadonnées Zeenea vers Snowflake",
-        "Benchmark des formations Data/IA internes"
+        "Benchmark des formations internes Data & IA"
       ]
     },
     {
       role: "Stagiaire Data Analyst",
       company: "Parapharmacie",
       date: "Avril 2021 – Juin 2021",
-      desc: "Développement d’une application de suivi de stock avec alertes intelligentes"
+      desc: "Application de gestion de stock et alertes produits"
     },
     {
       role: "Stagiaire Data",
       company: "Sonatrach / TRC",
       date: "Janv 2020 – Juin 2020",
-      desc: "Analyse de consommation et gestion d'application carburant"
+      desc: "Analyse et développement d’un système de traçabilité du carburant"
     }
   ]
 };
 
-// Certifications
 const achievementSection = {
   title: "Certifications",
-  subtitle: "Certifications orientées Data Engineering, BI et Science",
+  subtitle: "Certifications obtenues et en préparation dans le domaine de la data",
   achievementsCards: [
     {
       title: "PL-300: Power BI Data Analyst Associate",
-      subtitle: "Analyse de données et création de rapports avec Power BI",
+      subtitle: "Certification Microsoft Power BI",
       footerLink: [
         {
           name: "Voir",
@@ -120,7 +114,7 @@ const achievementSection = {
     },
     {
       title: "SnowPro Core Certification",
-      subtitle: "Fondamentaux de Snowflake pour les ingénieurs data",
+      subtitle: "Certification officielle Snowflake",
       footerLink: [
         {
           name: "Voir",
@@ -130,21 +124,31 @@ const achievementSection = {
     },
     {
       title: "DP-203: Azure Data Engineer Associate",
-      subtitle: "Conception et implémentation de solutions data sur Azure",
+      subtitle: "Data Engineering sur Azure",
       footerLink: [
         {
           name: "Voir",
           url: "https://learn.microsoft.com/fr-fr/certifications/azure-data-engineer/"
         }
       ]
-    },
-    {
-      title: "Google Data Analytics Certificate",
-      subtitle: "Fondamentaux de l’analyse de données (Coursera)"
     }
   ],
   display: true
 };
+
+const openSource = { showGithubProfile: false, display: false };
+const bigProjects = { title: "", subtitle: "", projects: [], display: false };
+const blogSection = { title: "", subtitle: "", blogs: [], display: false };
+const talkSection = { title: "", subtitle: "", talks: [], display: false };
+const podcastSection = { title: "", subtitle: "", podcast: [], display: false };
+const contactInfo = {
+  title: "Contact",
+  subtitle: "Disponible pour discuter d’opportunités professionnelles",
+  number: "",
+  email_address: "khimechesakina@gmail.com"
+};
+const twitterDetails = { userName: "", display: false };
+const isHireable = true;
 
 module.exports = {
   splashScreen,
@@ -153,5 +157,13 @@ module.exports = {
   skillsSection,
   educationInfo,
   workExperiences,
-  achievementSection
+  achievementSection,
+  openSource,
+  bigProjects,
+  blogSection,
+  talkSection,
+  podcastSection,
+  contactInfo,
+  twitterDetails,
+  isHireable
 };
