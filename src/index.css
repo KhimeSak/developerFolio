@@ -6,7 +6,7 @@
     url("./assets/fonts/Agustina.woff") format("woff");
   font-display: swap;
 }
-@font-face {
+/*@font-face {
   font-family: "Montserrat";
   src: local("Montserrat"),
     url("./assets/fonts/Montserrat-Regular.ttf") format("woff");
@@ -19,7 +19,14 @@ code {
 html,
 body {
   scroll-behavior: smooth;
+}*/
+body {
+  margin: 0;
+  font: 19px/23px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
 body {
   margin: 0;
   font: 19px / 23px Montserrat, "Montserrat", sans-serif;
